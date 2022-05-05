@@ -25,6 +25,14 @@ h2 {
   margin-top: 40px;
 }
 
+h3 {
+  font: normal normal 600 24px/30px 'Work Sans', sans-serif;
+  letter-spacing: 0px;
+  color: #1E1F22;
+  opacity: 1;
+  text-align: center;
+}
+
 p {
   text-align: left;
   font: normal normal normal 20px/32px 'Work Sans', sans-serif;
@@ -51,8 +59,8 @@ li {
 }
 
 img {
-  width: 131px;
-  height: 40px;
+  width: auto;
+  height: auto;
 }
 
 button {
@@ -74,6 +82,23 @@ button:hover {
   background: #D10761;
   cursor: pointer;
 }
+
+label {
+  font: normal normal medium 13px/28px 'Work Sans', sans-serif;
+  font-weight: 600;
+  color: #1E1F22;
+  opacity: 1;
+  padding-bottom: 10px;
+}
+
+input {
+  font: normal normal normal 14px/28px 'Work Sans', sans-serif;
+  padding-left: 20px;
+  color: #1E1F22;
+  opacity: 0.5;
+}
+
+/* Styling for specific groups of elements of the webpage */
 
 .two-column {
   display: flex;
@@ -107,13 +132,6 @@ button:hover {
   margin: -16px;
 }
 
-label {
-  font: normal normal medium 13px/28px 'Work Sans', sans-serif;
-  font-weight: 600;
-  color: #1E1F22;
-  opacity: 1;
-  padding-bottom: 10px;
-}
 
 #name, #email {
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -124,13 +142,6 @@ label {
   height: 44px;
   padding: 0px;
   margin: 0px;
-}
-
-input {
-  font: normal normal normal 14px/28px 'Work Sans', sans-serif;
-  padding-left: 20px;
-  color: #1E1F22;
-  opacity: 0.5;
 }
 
 input::placeholder {
@@ -164,4 +175,56 @@ input::placeholder {
 
 #limited-offer {
   position: absolute;
+}
+
+/* Boostrap modal */
+
+.modal-content {
+  border: none;
+  border-radius: 12px;
+}
+
+.modal-header {
+  border: none;
+  border-radius: 12px;
+}
+
+.close {
+  width: 10px;
+  height: 10px;
+  background: #ECEDF2;
+  border-radius: 25%;
+  padding: none;
+  margin: none;
+}
+
+.modal-header .close {
+  padding: 0px;
+  margin: 0rem 0rem -1rem auto;
+  height: 24px;
+  width: 24px;
+  background: #ECEDF2;
+  border-radius: 100%;
+}
+
+.close:hover {
+  background: transparent;
+}
+
+#modal-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#modal-text {
+  font: normal normal normal 16px/24px 'Work Sans', sans-serif;
+  letter-spacing: 0px;
+  color: #828691;
+  opacity: 1;
+  text-align: center;
+  margin-left: 36px;
+  margin-right: 36px;
+  margin-bottom: 36px;
+  margin-top: 11px;
 }
